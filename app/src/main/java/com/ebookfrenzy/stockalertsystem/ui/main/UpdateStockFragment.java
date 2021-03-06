@@ -75,8 +75,9 @@ public class UpdateStockFragment extends Fragment {
         findButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
                 mViewModel.findProduct(productName.getText().toString());
+
+                Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -101,6 +101,7 @@ public class SearchStockFragment extends Fragment {
                             productPrice.setText(String.format(Locale.US, "RM%.2f", products.get(0).getPrice()));
 
                             Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
+
                         } else {
                             productId.setText("");
                             productQuantity.setText("");
