@@ -26,14 +26,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Product Id" />
+                android:text="Product Id"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/deleteproduct_id_textfield"
                 android:layout_width="423dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
 
         </TableRow>
 
@@ -47,14 +49,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="@string/quantity" />
+                android:text="@string/quantity"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/deleteproduct_qty_textfield"
                 android:layout_width="423dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
         </TableRow>
 
         <TableRow
@@ -68,14 +72,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/price"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/deleteproduct_price_textfield"
                 android:layout_width="423dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
 
         </TableRow>
 
@@ -87,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Product Name*"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/delete_search"
         app:layout_constraintEnd_toStartOf="@+id/deleteproduct_name_textfield"
         app:layout_constraintHorizontal_bias="0.192"
@@ -109,16 +115,17 @@
 
     <EditText
         android:id="@+id/deleteproduct_name_textfield"
-        android:layout_width="231dp"
-        android:layout_height="45dp"
+        android:layout_width="221dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.359" />
 
     <TableLayout
         android:id="@+id/tableLayout2"
