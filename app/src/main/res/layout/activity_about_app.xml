@@ -63,43 +63,38 @@
         android:id="@+id/dev2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
         android:fontFamily="serif-monospace"
         android:text="@string/ong_wen_xuan"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dev1"
-        app:layout_constraintTop_toBottomOf="@+id/developer_name" />
+        app:layout_constraintTop_toBottomOf="@+id/dev1" />
 
     <TextView
         android:id="@+id/dev1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginTop="18dp"
         android:fontFamily="serif-monospace"
         android:text="@string/elton_wong_chun_meng"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/dev2"
-        app:layout_constraintEnd_toStartOf="@+id/dev2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer_name" />
 
     <TextView
         android:id="@+id/dev4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="46dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="serif-monospace"
         android:text="@string/khew_xavier_ethan"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/appname"
-        app:layout_constraintStart_toStartOf="@+id/appimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dev3" />
 
     <TextView
@@ -119,13 +114,13 @@
         android:id="@+id/dev5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="14dp"
         android:fontFamily="serif-monospace"
         android:text="@string/loh_yu_jin"
         android:textSize="18sp"
         android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/dev1"
-        app:layout_constraintTop_toBottomOf="@+id/dev2" />
+        app:layout_constraintBottom_toTopOf="@+id/dev2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
