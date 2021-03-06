@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDemo">
-        <activity android:name=".UpdateStock"></activity>
+        <activity android:name=".about_app"></activity>
+        <activity android:name=".UpdateStock" />
         <activity android:name=".DeleteStock" />
         <activity android:name=".SearchStock" />
         <activity android:name=".AddStock" />

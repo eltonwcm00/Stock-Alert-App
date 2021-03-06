@@ -7,72 +7,91 @@
     android:background="#FBC02D"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="108dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="72dp"
-        android:onClick="btn"
-        android:text="@string/add"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="serif-monospace"
         android:text="@string/stock_alert_system"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonSearch"
         android:layout_width="108dp"
-        android:layout_height="51dp"
+        android:layout_height="54dp"
+        android:background="@drawable/custom_button"
         android:onClick="btn"
         android:text="@string/search"
+        android:textColor="@color/main_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toEndOf="@+id/btnAdd"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
+        app:layout_constraintVertical_bias="0.58" />
 
     <Button
         android:id="@+id/btnDelete"
         android:layout_width="108dp"
         android:layout_height="51dp"
+        android:background="@drawable/custom_button"
         android:onClick="btn"
         android:text="@string/delete"
-        android:textColor="#000000"
+        android:textColor="@color/main_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toEndOf="@+id/btnUpdate"
         app:layout_constraintTop_toBottomOf="@+id/buttonSearch"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/custom_button"
+        android:onClick="btn"
+        android:text="@string/add"
+        android:textColor="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
     <Button
         android:id="@+id/btnUpdate"
-        android:layout_width="108dp"
+        android:layout_width="wrap_content"
         android:layout_height="51dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/custom_button"
         android:onClick="btn"
         android:text="@string/update"
+        android:textColor="@color/main_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Button
+        android:id="@+id/btnAboutapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/about_app"
+        android:textColor="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/divider"
@@ -102,10 +121,12 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/appiconimage"
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/images" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
