@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="serif-monospace"
-        android:text="@string/stock_check_system"
+        android:text="@string/stock_alert_system"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
