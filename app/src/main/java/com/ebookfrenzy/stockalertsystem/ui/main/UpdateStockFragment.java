@@ -113,7 +113,7 @@ public class UpdateStockFragment extends Fragment {
 
                         } else {
                             clearFields();
-                            msg.setText("No Match!");
+                            msg.setText("No such Product!");
                         }
                     }
                 });
