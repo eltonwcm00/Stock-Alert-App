@@ -102,7 +102,6 @@ public class SearchStockFragment extends Fragment {
 
                             Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
                         } else {
-                            clearFields();
                             msg.setText("No such Product!");
                         }
                     }
