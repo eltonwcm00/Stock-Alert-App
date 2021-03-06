@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent stockDel = new Intent(this, DeleteStock.class);
                 startActivity(stockDel);
                 break;
+
+
         }
     }
 }
