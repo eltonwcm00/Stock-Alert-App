@@ -60,8 +60,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout5"
-        android:layout_width="321dp"
-        android:layout_height="237dp"
+        android:layout_width="312dp"
+        android:layout_height="226dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +94,7 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="0dp"
                 android:text="Product Quantity" />
 
             <EditText
@@ -131,8 +131,20 @@
                 android:id="@+id/updateproduct_update_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="20sp"
                 android:text="Update" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="110sp"
+                android:text="Cancel"
+                android:textAlignment="center" />
+
         </TableRow>
 
     </TableLayout>
