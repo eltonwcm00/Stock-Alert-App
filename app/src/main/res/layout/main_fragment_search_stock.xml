@@ -95,7 +95,10 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:focusable="false"
+                android:clickable="false"
+                />
 
         </TableRow>
 
@@ -118,7 +121,10 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:focusable="false"
+                android:clickable="false"
+                />
 
         </TableRow>
 
@@ -141,7 +147,10 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:focusable="false"
+                android:clickable="false"
+                />
 
         </TableRow>
 
