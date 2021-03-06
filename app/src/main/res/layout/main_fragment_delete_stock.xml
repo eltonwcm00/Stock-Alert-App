@@ -26,7 +26,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Product Id" />
+                android:text="Product Id"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/deleteproduct_id_textfield"
@@ -47,7 +48,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="@string/quantity" />
+                android:text="@string/quantity"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/deleteproduct_qty_textfield"
@@ -68,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/price"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/deleteproduct_price_textfield"
@@ -87,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Product Name*"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/delete_search"
         app:layout_constraintEnd_toStartOf="@+id/deleteproduct_name_textfield"
         app:layout_constraintHorizontal_bias="0.192"
@@ -120,7 +123,7 @@
         app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.357" />
 
     <TableLayout
         android:id="@+id/tableLayout2"

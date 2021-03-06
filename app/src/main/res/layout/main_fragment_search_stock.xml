@@ -19,7 +19,8 @@
             android:id="@+id/deleteproduct_productname_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/product_name" />
+            android:text="@string/product_name"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/searchproduct_productname"
@@ -85,7 +86,8 @@
                 android:id="@+id/searchproduct_productid_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/product_id" />
+                android:text="@string/product_id"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/searchproduct_productid"
@@ -107,7 +109,8 @@
                 android:id="@+id/searchproduct_quantity_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/quantity" />
+                android:text="@string/quantity"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/searchproduct_quantity"
@@ -129,7 +132,8 @@
                 android:id="@+id/searchproduct_price_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/price" />
+                android:text="@string/price"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/searchproduct_price"
