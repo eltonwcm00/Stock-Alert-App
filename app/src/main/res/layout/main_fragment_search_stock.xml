@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.SearchStockFragment">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/deleteproduct_productname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name*" />
+
+        <EditText
+            android:id="@+id/searchproduct_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/notMatchMsg"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/search"
+        android:id="@+id/searchproduct_searchbtn"
+        android:textColorLink="#FFFFFF"
+        android:textColor="#000000"
+        android:shadowColor="#FFFFFF"
+        android:background="#E81E1E"
+        android:layout_weight="1" style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    <Button
+        android:id="@+id/addproduct_cancelbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/cancel"
+        android:textColor="#000000" />
+
+</LinearLayout>
+
+
+<TableLayout
+    android:layout_height="231dp"
+    android:layout_width="match_parent">
+
+
+    <TableRow
+        android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/product_id"
+        android:id="@+id/searchproduct_productid_text"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/searchproduct_productid"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:autofillHints=""/>
+
+</TableRow>
+
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/searchproduct_quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/searchproduct_quantity"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:autofillHints=""/>
+
+</TableRow>
+
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/searchproduct_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/searchproduct_price"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:autofillHints=""/>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>
