@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
@@ -77,6 +78,7 @@ public class DeleteStockFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 mViewModel.findProduct(productName.getText().toString());
+                Toast.makeText(getActivity(),"Info is found",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -84,6 +86,7 @@ public class DeleteStockFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 mViewModel.deleteProduct(productName.getText().toString());
+                Toast.makeText(getActivity(),"Stock is deleted!",Toast.LENGTH_SHORT).show();
                 clearFields();
             }
         });
