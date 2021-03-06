@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
@@ -74,6 +75,7 @@ public class UpdateStockFragment extends Fragment {
         findButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
                 mViewModel.findProduct(productName.getText().toString());
             }
         });
@@ -86,6 +88,8 @@ public class UpdateStockFragment extends Fragment {
                                          Double.parseDouble(productPrice.getText().toString()),
                                          Integer.parseInt(productId.getText().toString()) );
                 clearFields();
+
+
             }
         });
 
