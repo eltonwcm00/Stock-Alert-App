@@ -115,7 +115,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="25dp"
         android:fontFamily="serif-monospace"
-        android:text="@string/liew_jie_shen"
+        android:text="@string/liew_jie_sheng"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toStartOf="@+id/dev2"
