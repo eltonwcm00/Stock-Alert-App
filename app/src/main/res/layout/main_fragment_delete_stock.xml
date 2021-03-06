@@ -33,8 +33,7 @@
                 android:layout_width="423dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:importantForAutofill="no" />
+                android:inputType="textPersonName" />
 
         </TableRow>
 
@@ -106,9 +105,7 @@
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deleteproduct_name_textfield"
-        app:layout_constraintVertical_bias="1.0"
-        android:background="@drawable/custom_button"
-        android:textColor="@color/main_color"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/deleteproduct_name_textfield"
@@ -144,17 +141,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="80px"
                 android:text="Delete"
-                android:textAlignment="center"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/main_color"/>
+                android:textAlignment="center" />
 
             <Button
                 android:id="@+id/deleteproduct_cancel_btn"
                 android:layout_width="138dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="80px"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/main_color"
                 android:text="@string/cancel" />
         </TableRow>
 
@@ -162,15 +155,14 @@
 
     <TextView
         android:id="@+id/msg"
-        android:layout_width="186dp"
-        android:layout_height="28dp"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
         android:layout_marginTop="16dp"
-        android:text="@string/delete_product"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tableLayout"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="@+id/tableLayout"
         app:layout_constraintTop_toTopOf="parent" />
 

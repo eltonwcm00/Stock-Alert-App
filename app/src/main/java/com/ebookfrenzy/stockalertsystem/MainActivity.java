@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(stockDel);
                 break;
 
-
+            case "About App":
+                Intent aboutApp = new Intent(this, about_app.class);
+                startActivity(aboutApp);
+                break;
         }
     }
 }

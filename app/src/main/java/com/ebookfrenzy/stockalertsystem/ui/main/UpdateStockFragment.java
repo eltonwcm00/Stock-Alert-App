@@ -87,7 +87,7 @@ public class UpdateStockFragment extends Fragment {
                                          Integer.parseInt(productQuantity.getText().toString()),
                                          Double.parseDouble(productPrice.getText().toString()),
                                          Integer.parseInt(productId.getText().toString()) );
-                clearFields();
+                //clearFields();
 
                 Toast.makeText(getActivity(),"Stock is updated!",Toast.LENGTH_SHORT).show();
             }
