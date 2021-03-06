@@ -19,7 +19,7 @@
             android:id="@+id/deleteproduct_productname_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product Name*" />
+            android:text="@string/product_name" />
 
         <EditText
             android:id="@+id/searchproduct_productname"
@@ -52,10 +52,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#E81E1E"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/main_color"
             android:shadowColor="#FFFFFF"
             android:text="@string/search"
-            android:textColor="#000000"
             android:textColorLink="#FFFFFF" />
 
         <Button
@@ -65,7 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/cancel"
-            android:textColor="#000000" />
+            android:background="@drawable/custom_button"
+            android:textColor="@color/main_color" />
 
     </LinearLayout>
 

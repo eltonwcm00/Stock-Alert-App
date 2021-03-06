@@ -112,15 +112,17 @@
             android:layout_width="162dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="7sp"
-            android:background="#E42828"
             android:text="@string/add"
-            android:textColor="#2B2B2B" />
+            android:background="@drawable/custom_button"
+            android:textColor="@color/main_color" />
 
         <Button
             android:id="@+id/btnCancel"
             android:layout_width="198dp"
             android:layout_height="wrap_content"
-            android:text="@string/cancel" />
+            android:text="@string/cancel"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/main_color"/>
 
     </LinearLayout>
 

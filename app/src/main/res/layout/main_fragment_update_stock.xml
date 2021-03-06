@@ -34,7 +34,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:text="Product Name*" />
+                android:text="@string/product_name" />
 
             <EditText
                 android:id="@+id/updateproduct_name_textfield"
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:text="Product Quantity" />
+                android:text="@string/product_quantity" />
 
             <EditText
                 android:id="@+id/updateproduct_qty_textfield"
@@ -113,7 +113,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Product Price" />
+                android:text="@string/product_price" />
 
             <EditText
                 android:id="@+id/updateproduct_price_textfield"
@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20sp"
-                android:text="Update" />
+                android:text="@string/update" />
 
             <Button
                 android:id="@+id/cancelButton"
@@ -142,11 +142,22 @@
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="110sp"
-                android:text="Cancel"
+                android:text="@string/cancel"
                 android:textAlignment="center" />
 
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/update_stock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_stock"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

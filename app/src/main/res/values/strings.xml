@@ -27,4 +27,13 @@
     <string name="ong_wen_xuan">Ong Wen Xuan</string>
     <string name="about_app">About App</string>
     <string name="app_developers">App Developers:</string>
+    <string name="product_name">Product Name*</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="elton_wong_chun_meng">Elton Wong Chun Meng</string>
+    <string name="product_name">Product Name*</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="product_price">Product Price</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="update">Update</string>
 </resources>
