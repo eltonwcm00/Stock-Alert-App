@@ -37,8 +37,7 @@ public class DeleteStockFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.main_fragment_delete_stock, container, false);
     }
 
@@ -60,7 +59,6 @@ public class DeleteStockFragment extends Fragment {
     }
 
     private void clearFields() {
-
         productId.setText("");
         productName.setText("");
         productQuantity.setText("");
@@ -100,6 +98,7 @@ public class DeleteStockFragment extends Fragment {
                             productName.setText(products.get(0).getName());
                             productQuantity.setText(String.format(Locale.US, "%d", products.get(0).getQuantity()));
                             productPrice.setText(String.format(Locale.US, "RM%.2f", products.get(0).getPrice()));
+
                         } else {
                             clearFields();
                             msg.setText("No Match!");

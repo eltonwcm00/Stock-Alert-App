@@ -39,8 +39,7 @@ public class SearchStockFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.main_fragment_search_stock, container, false);
     }
 
@@ -49,6 +48,7 @@ public class SearchStockFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
         // TODO: Use the ViewModel
+
         productId = getView().findViewById(R.id.searchproduct_productid);
         productName = getView().findViewById(R.id.searchproduct_productname);
         productQuantity = getView().findViewById(R.id.searchproduct_quantity);
@@ -74,12 +74,11 @@ public class SearchStockFragment extends Fragment {
             public void onClick(View view) {
                 mViewModel.findProduct(productName.getText().toString());
             }
-        }); }
+        });
+    }
 
     private void observerSetup() {
-
-        mViewModel.getSearchResults().observe(getViewLifecycleOwner(),
-                new Observer<List<Product>>() {
+        mViewModel.getSearchResults().observe(getViewLifecycleOwner(), new Observer<List<Product>>() {
                     @Override
                     public void onChanged(@Nullable final List<Product> products) {
                         if (products.size() > 0) {

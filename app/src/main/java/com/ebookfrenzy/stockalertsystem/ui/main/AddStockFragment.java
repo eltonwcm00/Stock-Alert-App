@@ -40,8 +40,7 @@ public class AddStockFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.main_fragment_add_stock, container, false);
     }
 
@@ -50,10 +49,12 @@ public class AddStockFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
         // TODO: Use the ViewModel
+
         productId = getView().findViewById(R.id.productID);
         productName = getView().findViewById(R.id.productName);
         productQuantity = getView().findViewById(R.id.productQuantity);
         productPrice = getView().findViewById(R.id.productPrice);
+
         listenerSetup();
         observerSetup();
         recyclerSetup();
@@ -75,16 +76,18 @@ public class AddStockFragment extends Fragment {
                 String name = productName.getText().toString();
                 String quantity = productQuantity.getText().toString();
                 String price = productPrice.getText().toString();
+
                 if (!name.equals("") && !quantity.equals("")) {
                     Product product = new Product(name, Integer.parseInt(quantity),Double.parseDouble(price));
                     mViewModel.insertProduct(product);
                     clearFields();
                     //Make Toast!!!!!!!!!
+
                 } else {
                     productId.setText("Incomplete information");
                 }}
         });
-      }
+    }
 
     private void observerSetup() {
         mViewModel.getAllProducts().observe(getViewLifecycleOwner(),
@@ -110,6 +113,7 @@ public class AddStockFragment extends Fragment {
     }
 
     private void recyclerSetup() {
+
         RecyclerView recyclerView;
         adapter = new ProductListAdapter(R.layout.product_list_item);
         recyclerView = getView().findViewById(R.id.product_recycler);

@@ -25,21 +25,26 @@ public class MainActivity extends AppCompatActivity {
 
         button_text = ((Button) View).getText().toString();
 
-        if (button_text.equals("Add")) {
-            Intent stockAdd = new Intent(this, AddStock.class);
-            startActivity(stockAdd);
+        switch (button_text) {
+            case "Add":
+                Intent stockAdd = new Intent(this, AddStock.class);
+                startActivity(stockAdd);
+                break;
 
-        } else if(button_text.equals("Search")) {
-            Intent stockSearch = new Intent(this, SearchStock.class);
-            startActivity(stockSearch);
+            case "Search":
+                Intent stockSearch = new Intent(this, SearchStock.class);
+                startActivity(stockSearch);
+                break;
 
-        } else if(button_text.equals("Update")) {
-            Intent stockUpdate = new Intent(this, UpdateStock.class);
-            startActivity(stockUpdate);
+            case "Update":
+                Intent stockUpdate = new Intent(this, UpdateStock.class);
+                startActivity(stockUpdate);
+                break;
 
-        } else if(button_text.equals("Delete")) {
-            Intent stockDel = new Intent(this, DeleteStock.class);
-            startActivity(stockDel);
+            case "Delete":
+                Intent stockDel = new Intent(this, DeleteStock.class);
+                startActivity(stockDel);
+                break;
         }
     }
 }

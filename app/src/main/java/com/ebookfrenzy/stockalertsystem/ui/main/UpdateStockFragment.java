@@ -37,8 +37,7 @@ public class UpdateStockFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.main_fragment_update_stock, container, false);
     }
 
@@ -47,6 +46,7 @@ public class UpdateStockFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
         // TODO: Use the ViewModel
+
         productId = getView().findViewById(R.id.updateproduct_id_textfield);
         productName = getView().findViewById(R.id.updateproduct_name_textfield);
         productQuantity = getView().findViewById(R.id.updateproduct_qty_textfield);
@@ -58,7 +58,6 @@ public class UpdateStockFragment extends Fragment {
     }
 
     private void clearFields() {
-
         productId.setText("");
         productName.setText("");
         productQuantity.setText("");

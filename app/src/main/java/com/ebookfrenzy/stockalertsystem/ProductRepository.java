@@ -64,6 +64,7 @@ public class ProductRepository {
     public LiveData<List<Product>> getAllProducts() {
         return allProducts;
     }
+
     public MutableLiveData<List<Product>> getSearchResults() {
         return searchResults;
     }
