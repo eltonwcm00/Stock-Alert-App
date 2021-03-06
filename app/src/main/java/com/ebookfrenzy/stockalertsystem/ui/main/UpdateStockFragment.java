@@ -3,6 +3,7 @@ package com.ebookfrenzy.stockalertsystem.ui.main;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
 import com.ebookfrenzy.stockalertsystem.R;
 
@@ -67,6 +69,7 @@ public class UpdateStockFragment extends Fragment {
     private void listenerSetup() {
         Button findButton = getView().findViewById(R.id.update_search);
         Button updateButton = getView().findViewById(R.id.updateproduct_update_btn);
+        Button cancelButton = getView().findViewById(R.id.cancelButton);
 
         findButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +86,14 @@ public class UpdateStockFragment extends Fragment {
                                          Double.parseDouble(productPrice.getText().toString()),
                                          Integer.parseInt(productId.getText().toString()) );
                 clearFields();
+            }
+        });
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }

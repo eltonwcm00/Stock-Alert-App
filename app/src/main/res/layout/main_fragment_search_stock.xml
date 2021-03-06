@@ -59,7 +59,7 @@
             android:textColorLink="#FFFFFF" />
 
         <Button
-            android:id="@+id/addproduct_cancelbtn"
+            android:id="@+id/searchproduct_cancelbtn"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

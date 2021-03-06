@@ -1,7 +1,5 @@
 package com.ebookfrenzy.stockalertsystem.ui.main;
 
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
@@ -18,8 +16,6 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.ebookfrenzy.stockalertsystem.AddStock;
-import com.ebookfrenzy.stockalertsystem.DeleteStock;
 import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
 import androidx.lifecycle.Observer;
@@ -28,7 +24,6 @@ import java.util.Locale;
 
 
 import com.ebookfrenzy.stockalertsystem.R;
-import com.ebookfrenzy.stockalertsystem.SearchStock;
 
 public class SearchStockFragment extends Fragment {
 
@@ -75,13 +70,13 @@ public class SearchStockFragment extends Fragment {
 
     private void listenerSetup() {
         Button findButton = getView().findViewById(R.id.searchproduct_searchbtn);
-        Button cancelButton = getView().findViewById(R.id.addproduct_cancelbtn);
+        Button cancelButton = getView().findViewById(R.id.searchproduct_cancelbtn);
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
             }
         });
 
