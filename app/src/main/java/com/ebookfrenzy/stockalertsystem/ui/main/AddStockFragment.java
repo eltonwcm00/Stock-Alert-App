@@ -2,6 +2,7 @@ package com.ebookfrenzy.stockalertsystem.ui.main;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
@@ -85,7 +87,8 @@ public class AddStockFragment extends Fragment {
                     Product product = new Product(name, Integer.parseInt(quantity),Double.parseDouble(price));
                     mViewModel.insertProduct(product);
                     clearFields();
-                    //Make Toast!!!!!!!!!
+
+                    Toast.makeText(getActivity(),"Stock is added!",Toast.LENGTH_SHORT).show();
 
                 } else {
                     productId.setText("Incomplete information");
@@ -108,20 +111,6 @@ public class AddStockFragment extends Fragment {
                         adapter.setProductList(products);
                     }
                 });
-//        mViewModel.getSearchResults().observe(getViewLifecycleOwner(),
-//                new Observer<List<Product>>() {
-//                    @Override
-//                    public void onChanged(@Nullable final List<Product> products) {
-//                        if (products.size() > 0) {
-//                            productId.setText(String.format(Locale.US, "%d", products.get(0).getId()));
-//                            productName.setText(products.get(0).getName());
-//                            productQuantity.setText(String.format(Locale.US, "%d", products.get(0).getQuantity()));
-//                            productPrice.setText(String.format(Locale.US, "RM%.2f", products.get(0).getPrice()));
-//                        } else {
-//                            productId.setText("No Match");
-//                        }
-//                    }
-//                });
     }
 
     private void recyclerSetup() {
