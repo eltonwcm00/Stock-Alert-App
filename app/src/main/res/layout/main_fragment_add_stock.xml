@@ -109,11 +109,17 @@
         <Button
             android:id="@+id/addButton"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="135dp"
+            android:layout_width="198dp"
             android:layout_height="wrap_content"
             android:background="#E42828"
             android:text="@string/add"
             android:textColor="#2B2B2B" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
 
     </LinearLayout>
 

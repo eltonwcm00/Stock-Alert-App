@@ -2,6 +2,7 @@ package com.ebookfrenzy.stockalertsystem.ui.main;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
+
+import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
 import androidx.lifecycle.Observer;
 import java.util.List;
@@ -69,6 +72,7 @@ public class AddStockFragment extends Fragment {
 
     private void listenerSetup() {
         Button addButton = getView().findViewById(R.id.addButton);
+        Button cancelButton = getView().findViewById(R.id.btnCancel);
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +90,14 @@ public class AddStockFragment extends Fragment {
                 } else {
                     productId.setText("Incomplete information");
                 }}
+        });
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
         });
     }
 
