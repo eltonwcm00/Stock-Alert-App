@@ -52,11 +52,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#E81E1E"
             android:shadowColor="#FFFFFF"
             android:text="@string/search"
-            android:textColor="#000000"
-            android:textColorLink="#FFFFFF" />
+            android:textColorLink="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/main_color"/>
 
         <Button
             android:id="@+id/searchproduct_cancelbtn"
@@ -65,7 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/cancel"
-            android:textColor="#000000" />
+            android:background="@drawable/custom_button"
+            android:textColor="@color/main_color"/>
 
     </LinearLayout>
 
