@@ -84,7 +84,6 @@ public class SearchStockFragment extends Fragment {
         findButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
                 mViewModel.findProduct(productName.getText().toString());
             }
         });
@@ -100,6 +99,8 @@ public class SearchStockFragment extends Fragment {
                             productName.setText(products.get(0).getName());
                             productQuantity.setText(String.format(Locale.US, "%d", products.get(0).getQuantity()));
                             productPrice.setText(String.format(Locale.US, "RM%.2f", products.get(0).getPrice()));
+
+                            Toast.makeText(getActivity(),"Stock is found!",Toast.LENGTH_SHORT).show();
                         } else {
                             clearFields();
                             msg.setText("No such Product!");
