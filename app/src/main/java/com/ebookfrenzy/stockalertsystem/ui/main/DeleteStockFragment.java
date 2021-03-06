@@ -2,6 +2,7 @@ package com.ebookfrenzy.stockalertsystem.ui.main;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,7 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.ebookfrenzy.stockalertsystem.MainActivity;
 import com.ebookfrenzy.stockalertsystem.Product;
 import androidx.lifecycle.Observer;
 import java.util.List;
@@ -69,6 +71,7 @@ public class DeleteStockFragment extends Fragment {
 
         Button findButton = getView().findViewById(R.id.delete_search);
         Button deleteButton = getView().findViewById(R.id.deleteproduct_delete_btn);
+        Button cancelButton = getView().findViewById(R.id.deleteproduct_cancel_btn);
 
         findButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +85,14 @@ public class DeleteStockFragment extends Fragment {
             public void onClick(View view) {
                 mViewModel.deleteProduct(productName.getText().toString());
                 clearFields();
+            }
+        });
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }

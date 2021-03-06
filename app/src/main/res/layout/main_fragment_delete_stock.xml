@@ -137,7 +137,7 @@
 
             <Button
                 android:id="@+id/deleteproduct_delete_btn"
-                android:layout_width="185dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="80px"
                 android:text="Delete"
@@ -145,7 +145,7 @@
 
             <Button
                 android:id="@+id/deleteproduct_cancel_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="138dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="80px"
                 android:text="@string/cancel" />
