@@ -63,8 +63,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout5"
-        android:layout_width="321dp"
-        android:layout_height="228dp"
+        android:layout_width="365dp"
+        android:layout_height="221dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,12 +130,12 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="362dp"
+            android:layout_height="95dp">
 
             <Button
                 android:id="@+id/updateproduct_update_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="158dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20sp"
@@ -145,8 +145,8 @@
 
             <Button
                 android:id="@+id/cancelButton"
-                android:layout_width="64dp"
-                android:layout_height="match_parent"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="110sp"
